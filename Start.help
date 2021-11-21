@@ -1,0 +1,110 @@
+SIMULATOR FOR HYPOTHETICAL COMPUTER
+FOR JAVA V1.00
+===================================
+
+Simulator for hypothetical computer for Java is very good substitute to hardware implementation because it is much much cheaper (it is free) and it runs on every Java 1.1 capable computer (PCs with Win95/NT or OS/2, Linux, MACs, workstations,...).
+
+
+Equipment
+=========
+
+You need at least:
+1. CPU powerful as Pentium-90 or better (PowerPc,...).
+2. 800x600 resolution.
+3. Enough RAM (16Mb).
+
+
+Integrated Developer Environment
+================================
+
+It shows current date and time. There are the following menu options:
+
+
+1.Exit - now!
+It saves all settings and contents of editor and simulator.
+
+2.Options - editor
+You can change font size and set cursor position on/off (because of cursor position bug).
+
+3.Options - simulator
+You can change report settings to make or print appointed info. You can also set sleep time in ms for simulator's running mode.
+
+4.Help -help
+It shows this dialog window.
+
+5.Help - about
+It shows information about this program.
+
+
+Editor
+======
+
+In editor you can edit your source code and compile it.
+
+
+Menu options:
+
+1.File - new
+Creates new source with default header and footer (Default.asm).
+
+2.File - open
+Opens source code.
+
+3.File - save
+Saves source code. It uses default name or asks for it if there is none.
+
+4.File - save as
+Saves source code under new name.
+
+5.File - print
+Prints source code.
+
+6.Edit - cut
+Cuts selected text. Doesn't work because of Java bug. Use CTRL+X or SHIFT+DEL instead.
+
+7.Edit - copy
+Copies selected text. Doesn't work because of Java bug. Use CTRL+C or CTRL+INS instead.
+
+8.Edit - paste
+Pastes selected text. Doesn't work because of Java bug. Use CTRL+V or SHIFT+INS instead.
+
+9.Edit - find
+Tries to find a string in a text. Doesn't work because of Java bug.
+
+10.Compile - run
+Compiles source code, saves made binary code and fills cells in simulator window.
+
+
+Simulator
+=========
+
+Simulator simulates hypothetical computer. It shows next address, operator and operand. Already executed steps are written into history listbox. State of each cell is shown in 2D array of text cells (green stands for program, blue for reserved cells and red for I/O). 
+
+Followin buttons are implemented:
+
+1.Step
+Executes operator by operator manually.
+
+2.Reset
+Resets (initializes) hypothetical computer.
+
+3.Run
+Starts running mode.
+
+4.Stop
+Stops running mode.
+
+
+Menubar contains:
+
+1.File - open
+Opens binary file.
+
+2.File - make report
+Makes a file containing report.
+
+3.File - print
+Prints report.
+
+4.Edit - edit cells
+Opens dialog window to manually manipulate with cells (specially with I/O ones). With apply you change cell and with close you remove it. To refresh values enter the same cell.
